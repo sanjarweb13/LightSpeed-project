@@ -1,0 +1,156 @@
+
+.bgimg {
+  background: url(/media/178240.jpg) center;
+  background-size: cover;
+  height: 100vh;
+}
+
+@media (max-width: 460px) {
+  .bgfixedimg {
+    display: none;
+  }
+}
+@media (min-width: 2660px) {
+  .bgfixedimg {
+    display: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .contactBgFixedImg {
+    display: none;
+  }
+}
+@media (min-width: 2660px) {
+  .contactBgFixedImg {
+    display: none;
+  }
+}
+
+.bodybg {
+  background: linear-gradient(65deg, #48238e, #121b51);
+}
+
+.aboutbg{
+  background: url(/media/pexels-belle-co-1000445.jpg) no-repeat;
+}
+
+.aboutlrnmrbg{
+  background: linear-gradient(65deg, #37238e, #121b51);
+}
+.contBg{
+  background: url(/media/contactBg.jpg) no-repeat center center;
+  height: 100vh;
+}
+
+
+footer{
+background: linear-gradient(to right, #00093c, #2d0b00);
+border-top-left-radius: 125px;
+}
+
+
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  /* background-color: - add your own background-color */
+  font-size: 18px;
+  width: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color:  rgb(2 132 199);
+}
+
+
+.effect.effect-2::before {
+  content: "\f0a4";
+  font-family: FontAwesome;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -25px;
+  width: 30px;
+  height: 100%;
+  border-radius: 0px 10px 10px 0px;
+  transition: all 0.09s linear 0s;
+  text-align: center;
+}
+
+.effect.effect-2:hover{
+  text-indent: -50px;
+}
+
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}

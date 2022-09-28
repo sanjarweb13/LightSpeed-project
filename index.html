@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homepage" />
+    <title>Lightspeed | Internet Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/aea7d27167.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bodybg">
+    <!-- --------------header------------- -->
+
+    <header
+      class="shadow-md shadow-gray-900 fixed w-full bg-gray-900 z-50 px-6"
+    >
+      <div class="max-w-6xl mx-auto flex justify-between py-6 items-center">
+        <h1
+          class="text-slate-200 font-bold tracking-widest text-2xl md:text-4xl items-center"
+        >
+          <a href="./index.html">
+            <i class="fa-solid fa-satellite text-amber-400"></i>
+            Light<span class="text-sky-400">SPEED</span></a
+          >
+        </h1>
+        <nav class="hidden md:block">
+          <ul class="flex font-semibold text-slate-300">
+            <li
+              class="px-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="px-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a href="./about.html">About Us</a>
+            </li>
+            <li
+              class="hidden px-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a href="./menu.html">Services</a>
+            </li>
+            <li
+              class="pl-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="openBtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 md:h-6 w-5 md:w-6 text-sky-500 hover:text-sky-400 block md:hidden mx-3 md:mx-0"
+            id="onclick"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- ------mobile menu------- -->
+
+      <div
+        id="mobileMenu"
+        style="display: none"
+        class="bg-gray-900 fixed h-96 inset-0 p-6"
+      >
+        <div class="flex justify-between items-center">
+          <h1
+            class="text-slate-200 font-bold tracking-widest text-2xl md:text-4xl items-center"
+          >
+            <a href="./index.html">
+              <i class="fa-solid fa-satellite text-amber-400"></i>
+              Light<span class="text-sky-400">SPEED</span></a
+            >
+          </h1>
+          <button id="closeBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 text-sky-400 mx-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <hr class="my-4 border-gray-300" />
+        <nav>
+          <ul class="font-semibold text-slate-400 text-lg">
+            <li>
+              <a
+                class="px-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out"
+                href="./index.html"
+                >Home</a
+              >
+              <hr class="mx-4 my-4" />
+            </li>
+            <li>
+              <a
+                class="px-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out"
+                href="./about.html"
+                >About Us</a
+              >
+              <hr class="mx-4 my-4" />
+            </li>
+            <li>
+              <a
+                class="px-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out"
+                href="./menu.html"
+                >Services</a
+              >
+              <hr class="mx-4 my-4" />
+            </li>
+            <li>
+              <a
+                class="pl-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out"
+                href="./contact.html"
+                >Contact Us</a
+              >
+              <hr class="mx-4 my-4" />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="flex-auto bgfixedimg">
+      <img
+        class="fixed -z-10 object-cover"
+        src="./media/pexels-eberhard-grossgasteiger-2098427.jpg"
+        alt="vecteezy_background-geometric-wave-background_vg0121"
+      />
+    </section>
+
+    <section class="bgimg pt-10 sm:pt-24">
+      <div class="max-w-6xl mx-4 xl:mx-auto py-20">
+        <div class="max-w-4xl md:max-w-lg pr-32">
+          <h2
+            class="text-5xl font-extrabold py-10 tracking-widest text-slate-300"
+          >
+            <span class="text-pink-600 text-8xl text-center">2X</span>
+            FASTER INTERNET
+          </h2>
+          <p class="text-lg text-slate-300">
+            Developing innovative solutions to provide low-cost high-speed
+            internet to everywhere in the world, even for the most remote and
+            secluded location.
+          </p>
+        </div>
+        <div class="sm:flex max-w-6xl mx-auto mt-20 items-center">
+          <a
+            href="./signUp.html"
+            class="font-semibold rounded-3xl bg-sky-700 py-2 px-4 shadow-inner shadow-sky-300 text-slate-200 hover:bg-sky-600 active:bg-sky-700 items-center tracking-widest"
+          >
+            Get started<i class="fa-solid fa-angle-right ml-4"></i>
+          </a>
+          <button
+            class="main font-bold mx-12 items-center tracking-widest text-sky-600 hover:text-sky-400"
+          >
+            Contact sales<i class="fa-solid fa-angle-right ml-4"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <div
+      class="max-w-6xl mx-auto text-center py-12 mt-10 text-3xl text-slate-300 font-bold"
+    >
+      <i
+        class="fa-brands fa-hive fa-4x text-green-500 px-4 mx-4 animate-pulse"
+      ></i>
+      <h2 class="py-6">
+        HUMAN'S Life is On The <span class="text-blue-500">INTERNET</span>
+      </h2>
+    </div>
+
+    <section
+      class="max-w-6xl mx-8 xl:mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 md:gap-10 justify-center text-slate-300"
+    >
+      <!-- ---------------1------------ -->
+      <div
+        class="bg-zinc-800 py-6 md:py-10 px-4 tracking-widest sm:my-32 shadow-inner shadow-zinc-700 rounded-bl-3xl rounded-tr-3xl hover:translate-y-4 sm:hover:-translate-y-4 transition duration-700 ease-in-out"
+      >
+        <div class="flex justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-10 md:w-16 lg:w-20 text-sky-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
+            />
+          </svg>
+        </div>
+        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold my-4 text-center">
+          APPROVED
+        </h2>
+        <div class="flex justify-center space-x-4 md:space-x-6 items-center">
+          <h3 class="text-2xl md:text-4xl lg:text-5xl font-bold">4.9</h3>
+          <span><i class="fa-solid fa-star md:fa-2x text-yellow-600"></i></span>
+        </div>
+        <p class="text-center font-semibold pt-6">Customers' ratings</p>
+      </div>
+
+      <!-- -------------2------------ -->
+      <div
+        class="rounded-2xl bg-zinc-900 py-6 md:py-10 px-6 tracking-widest sm:mt-12 sm:mb-44 shadow-inner shadow-zinc-800 hover:scale-105 transition duration-700 ease-in-out"
+      >
+        <div class="flex justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-10 md:w-16 lg:w-20 text-sky-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
+            />
+          </svg>
+        </div>
+        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold my-4 text-center">
+          AMAZING SPEED
+        </h2>
+        <div class="flex justify-center space-x-4 md:space-x-6 items-center">
+          <h3 class="text-2xl md:text-4xl lg:text-5xl font-bold">300</h3>
+          <span class="text-red-400">/mbps</span>
+        </div>
+        <p class="text-center font-semibold pt-6">Download speed</p>
+      </div>
+
+      <!-- -------------3----------- -->
+      <div
+        class="bg-zinc-800 py-6 md:py-10 px-4 tracking-widest sm:my-32 rounded-br-3xl rounded-tl-3xl shadow-inner shadow-zinc-700 hover:-translate-y-4 transition duration-700 ease-in-out"
+      >
+        <div class="flex justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-10 md:w-16 lg:w-20 text-sky-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+            />
+          </svg>
+        </div>
+        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold my-4 text-center">
+          COVERAGE
+        </h2>
+        <h3 class="text-2xl md:text-4xl lg:text-5xl font-bold text-center">
+          195
+        </h3>
+        <p class="text-center font-semibold pt-6">Iternet in every country</p>
+      </div>
+    </section>
+
+    <section
+      class="max-w-6xl mx-4 xl:mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 my-6 md:my-24 items-center"
+    >
+      <div class="max-w-lg text-slate-300">
+        <h3 class="text-sky-400 items-center font-semibold">OUR MISSION</h3>
+        <h4 class="text-3xl font-bold py-4 text-green-400">
+          INTERNET ON A REMOTE ISLAND?
+        </h4>
+        <p class="my-6">
+          With the pandemic still affecting people and encouraging remote work,
+          people with spotty internet connections working from a beach or
+          secluded island can now enjoy reliable high-speed internet while still
+          escaping life in a busy town.
+        </p>
+        <a
+          class="items-center tracking-widest font-semibold rounded-3xl bg-sky-600 hover:bg-sky-500 active:bg-sky-600 py-1 md:py-2 px-3 md:px-4 shadow-inner shadow-sky-400 text-slate-200"
+          href="#"
+        >
+          Explore<i class="fa-solid fa-angle-right ml-3"></i>
+        </a>
+      </div>
+      <div>
+        <img
+          class="rounded-xl shadow-lg"
+          src="./media/Space-Wallpaper-4K-UHD-3840x2160-75.webp"
+          alt="saturnearthimg"
+        />
+      </div>
+    </section>
+
+    <section
+      class="max-w-6xl mx-4 xl:mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 my-16 md:my-24 items-center"
+    >
+      <div class="hidden md:block">
+        <img
+          class="rounded-xl shadow-lg"
+          src="./media/SATELLITE.webp"
+          alt="SAT-AIS_artists_impression_pillars"
+        />
+      </div>
+      <div class="max-w-lg text-slate-300">
+        <h3 class="text-sky-400 font-semibold">OUR CAPABILITIES</h3>
+        <h4 class="text-3xl font-bold py-4 text-green-400">INNOVATION</h4>
+        <p class="my-6">
+          LightSpeed uses thousands of micro satellites scattered around in low
+          orbit to bring high-speed internet anyware on the planet. This lets us
+          project down in a fixed spot on the Earth and drastically reduse
+          internet bandwidth and latency.
+        </p>
+        <a
+          class="rounded-3xl bg-sky-600 py-1 md:py-2 px-3 md:px-4 text-slate-200 shadow-inner shadow-sky-400 hover:bg-sky-500 active:bg-sky-600 items-center tracking-widest font-semibold"
+          href="#"
+          >Explore<i class="fa-solid fa-angle-right ml-3"></i
+        ></a>
+      </div>
+      <div class="block md:hidden">
+        <img
+          class="rounded-xl shadow-lg"
+          src="./media/SATELLITE.webp"
+          alt="SAT-AIS_artists_impression_pillars"
+        />
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-4 xl:mx-auto text-center text-slate-300 my-32">
+      <h3 class="tracking-widest text-sky-400 font-semibold hover:underline">
+        WHERE WE SERVE
+      </h3>
+      <h4 class="text-3xl font-bold my-4 text-amber-500">GLOBAL COVERAGE</h4>
+      <p class="max-w-md mx-auto">
+        Lightspeed provides internet solutions with excellent speeds around the
+        whole globe. Power your home or enterprise with connectivity in more 190
+        countries.
+      </p>
+      <div class="my-12">
+        <img
+          class="rounded-xl shadow-2xl"
+          src="./media/worldwide.jpg"
+          alt="worldwide"
+        />
+      </div>
+    </section>
+
+    <section
+      class="max-w-6xl mx-4 xl:mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 my-6 md:my-24 items-center"
+    >
+      <div class="hidden md:block">
+        <img
+          class="rounded-xl shadow-lg"
+          src="./media/internet-speed-measurement-technology-concept-133841627.jpg"
+          alt="SAT-AIS_artists_impression_pillars"
+        />
+      </div>
+      <div class="max-w-lg text-slate-300">
+        <h3 class="text-sky-400 font-semibold">OUR SOLUTION</h3>
+        <h4 class="text-3xl font-bold py-4 text-green-400">
+          LOOKING FOR SPEED?
+        </h4>
+        <p class="my-6">
+          A slow connection that times out or takes minutes for a page to load
+          is almost as no connection at all. Theretore, the Lightspeed has
+          decided to develop a solution that allows you to download anything at
+          a minimum of 150 Mbps and upload at a 10 Mbps with no frusttration
+          attached.
+        </p>
+        <a
+          class="rounded-3xl bg-sky-600 py-1 md:py-2 px-3 md:px-4 text-slate-200 shadow-inner shadow-sky-400 hover:bg-sky-500 active:bg-sky-600 items-center tracking-widest font-semibold"
+          href="#"
+          >Show more<i class="fa-solid fa-angle-right ml-3"></i
+        ></a>
+      </div>
+      <div class="block md:hidden">
+        <img
+          class="rounded-xl shadow-lg"
+          src="./media/internet-speed-measurement-technology-concept-133841627.jpg"
+          alt="SAT-AIS_artists_impression_pillars"
+        />
+      </div>
+    </section>
+
+    <section
+      class="max-w-6xl mx-4 xl:mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 my-16 md:my-24 items-center"
+    >
+      <div class="max-w-lg text-slate-300">
+        <h3 class="text-sky-400 font-semibold">OUR PROMISE</h3>
+        <h4 class="text-2xl md:text-3xl font-bold py-4 text-green-400">
+          SECURITY IS IMPORTANT
+        </h4>
+        <p class="my-6">
+          Cybersecurity risks pervade every organization and aren't always under
+          the direct control of your IT security team. Increasing global
+          connectivity, usage of cloud services, and outsourcing means a much
+          larger attack vector than in the past. Learn more about cyber
+          security.
+        </p>
+        <a
+          class="rounded-3xl bg-sky-600 py-1 md:py-2 px-3 md:px-4 text-slate-200 shadow-inner shadow-sky-400 hover:bg-sky-500 active:bg-sky-600 items-center tracking-widest font-semibold"
+          href="#"
+          >Learn more<i class="fa-solid fa-angle-right ml-3"></i
+        ></a>
+      </div>
+      <div>
+        <img
+          class="rounded-xl shadow-lg"
+          src="./media/Network Security Header.webp"
+          alt="SAT-AIS_artists_impression_pillars"
+        />
+      </div>
+    </section>
+
+    <!---------------------- CARDS ------------------------>
+
+    <section class="max-w-6 mx-4 xl:mx-auto">
+      <div class="max-w-md mx-auto my-10 md:my-24">
+        <h3
+          class="font-bold text-slate-300 text-center text-green-500 text-2xl md:text-3xl md:leading-10 px-12"
+        >
+          USED BY THOUSANDS OF HAPPY CUSTOMERS
+        </h3>
+        <p class="font-semibold text-slate-300 text-center md:leading-9 my-4">
+          These are the stories of our customers who joined us with great
+          pleasure when using our innovative solutions.
+        </p>
+      </div>
+      <div
+        class="max-w-6xl mx-4 md:mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 xl:gap-14 my-6 md:my-12"
+      >
+        <div
+          class="rounded-3xl p-6 bg-gray-800 text-slate-300 transition transform hover:-translate-y-3 motion-reduce:transition-none motion-reduce:hover:transform-none duration-300 shadow-inner shadow-gray-700"
+        >
+          <div
+            class="flex items-center space-x-4 md:justify-between font-semibold"
+          >
+            <img
+              class="w-10 h-10 rounded-full"
+              src="./media/images.jpg"
+              alt=""
+            />
+            <div
+              class="flex md:flex-col justify-self-start space-x-6 md:space-x-0"
+            >
+              <p class="text-green-500">Victoria S.</p>
+              <p>Thaiti, French Polinesia</p>
+            </div>
+            <span class="flex items-center text-rose-400">
+              4.5 <i class="fa-solid fa-star text-yellow-500 mx-2"></i>
+            </span>
+          </div>
+          <p class="my-4">
+            "Wow... I am very happy to use this internet provider, it turned out
+            to be more than my expectations and so far there have been no
+            problems."
+          </p>
+
+          <!-- ----------------------Card button------------------ -->
+
+          <a
+            class="bg-sky-600 text-slate-300 rounded-2xl py-1 px-3 font-semibold hover:bg-sky-500 active:bg-sky-700 float-right shadow-inner shadow-sky-400"
+            href="#"
+            >More
+            <i
+              class="fa-solid fa-arrow-right hover:translate-x-2 px-1 duration-700 ease-in-out"
+            ></i
+          ></a>
+        </div>
+
+        <div
+          class="rounded-3xl p-6 bg-gray-800 text-slate-300 transition transform hover:-translate-y-3 motion-reduce:transition-none motion-reduce:hover:transform-none shadow-inner shadow-gray-700"
+        >
+          <div
+            class="flex items-center space-x-4 md:justify-between font-semibold"
+          >
+            <img
+              class="w-10 h-10 rounded-full"
+              src="./media/GettyImages-1205154421.webp"
+              alt=""
+            />
+            <div
+              class="flex md:flex-col justify-self-start space-x-16 md:space-x-0"
+            >
+              <p class="text-green-500">Bred Pitt</p>
+              <p>Havai, USA</p>
+            </div>
+            <span class="flex items-center text-rose-400">
+              4.5 <i class="fa-solid fa-star text-yellow-500 mx-2"></i>
+            </span>
+          </div>
+          <p class="my-4">
+            "I like this because I like to travel far and still can connect with
+            high speed."
+          </p>
+
+          <!-- --------------------Card 2 button--------------- -->
+
+          <a
+            class="mt-12 bg-sky-600 text-slate-300 rounded-2xl py-1 px-3 font-semibold hover:bg-sky-500 active:bg-sky-700 float-right shadow-inner shadow-sky-400"
+            href="#"
+            >More
+            <i
+              class="fa-solid fa-arrow-right hover:translate-x-2 px-1 duration-700 ease-in-out"
+            ></i
+          ></a>
+        </div>
+        <div
+          class="rounded-3xl p-6 bg-gray-800 text-slate-300 transition transform hover:-translate-y-3 motion-reduce:transition-none motion-reduce:hover:transform-none shadow-inner shadow-gray-700"
+        >
+          <div
+            class="flex items-center space-x-4 md:justify-between font-semibold"
+          >
+            <img
+              class="w-10 h-10 rounded-full"
+              src="./media/section-circle-img-2-600x600-cropped.png"
+              alt=""
+            />
+            <div
+              class="flex md:flex-col justify-self-start space-x-10 md:space-x-0"
+            >
+              <p class="text-green-500">Katerin N.</p>
+              <p>Canberra, Australia</p>
+            </div>
+            <span class="flex items-center text-rose-400">
+              4.5 <i class="fa-solid fa-star text-yellow-500 mx-2"></i>
+            </span>
+          </div>
+          <p class="my-4">
+            "This is very useful for my business that currently requires a
+            high-speed network that has high security."
+          </p>
+
+          <!-- ----------------------Card 3 Button----------- -->
+
+          <a
+            class="mt-6 bg-sky-600 text-slate-300 rounded-2xl py-1 px-3 font-semibold hover:bg-sky-500 active:bg-sky-700 float-right shadow-inner shadow-sky-400"
+            href="#"
+            >More
+            <i
+              class="fa-solid fa-arrow-right hover:translate-x-2 px-1 duration-700 ease-in-out"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative max-w-6xl mx-4 xl:mx-auto my-20">
+      <img
+        src="./media/video-banner.jpg"
+        alt="video-banner"
+        class="rounded-3xl object-cover"
+      />
+      <div
+        class="absolute top-6 sm:top-12 md:top-28 sm:left-4ss md:left-24 max-w-4xl"
+      >
+        <h3
+          class="font-bold text-lg sm:text-xl md:text-3xl tracking-widest text-green-500 text-center"
+        >
+          READY TO JOIN US
+        </h3>
+        <p
+          class="font-semibold text-sm sm:text-md text-slate-300 text-center sm:my-6 mx-4"
+        >
+          LightSpeed uses thousands of micro satellites scattered around in low
+          orbit to bring high-speed internet anyware on the planet.
+        </p>
+        <p
+          class="hidden sm:block font-semibold text-sm sm:text-md text-slate-300 text-center my-6 mx-4"
+        >
+          Increasing global connectivity, usage of cloud services, and
+          outsourcing means a much larger attack vector than in the past. Learn
+          more about cyber security.
+        </p>
+        <form class="max-w-2xl mx-auto">
+          <input
+            type="email"
+            name="mail"
+            placeholder="Join our community"
+            required
+            class="w-full hidden md:block md:mt-8 px-4 py-3 text-sm sm:text-md md:text-xl bg-transparent border-b-2 text-slate-300 text-center mx-4"
+          />
+          <div class="flex justify-center mt-10 hidden md:block">
+            <button
+              class="effect effect-2 py-2 px-5 my-4 shadow-inner shadow-sky-400 font-semibold duration-300"
+            >
+              Join Now
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ------------------footer--------------- -->
+    <footer class="bg-gray-900 mt-24">
+      <div
+        class="max-w-6xl mx-8 xl:mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center pt-20"
+      >
+        <div class="text-center">
+          <div class="p-2">
+            <i
+              class="fa-solid fa-satellite text-amber-400 fa-4x animate-pulse transition duration-700 ease-in-out"
+            ></i>
+          </div>
+          <h3 class="text-slate-300 tracking-widest font-bold text-3xl mt-6">
+            Light<span class="text-sky-400">SPEED</span>
+          </h3>
+          <p class="max-w-md mx-auto text-slate-400 font-semibold my-6">
+            LightSpeed is a satellite internet constellation providing satellite
+            internet acces.
+          </p>
+        </div>
+        <div class="py-4 px-14">
+          <h3 class="text-slate-300 font-bold text-xl pb-6">Office</h3>
+          <p class="text-slate-400 font-semibold">Kay Poh Road</p>
+          <p class="text-slate-400 font-semibold">Bugis, Santosa</p>
+          <p class="pb-4 text-slate-400 font-semibold">
+            Ang Mo Kio, PIN 560066, Singapore
+          </p>
+          <p
+            class="text-slate-400 font-semibold border-b-2 border-indigo-500 text-lg"
+          >
+            srajabov76@gmail.com
+          </p>
+          <h4 class="py-4 text-slate-400 font-semibold">Tel: +998--0123456</h4>
+        </div>
+        <div class="py-4 pl-14 md:pl-36 lg:px-16">
+          <h3 class="text-slate-300 font-bold text-xl pb-6">Links</h3>
+          <ul>
+            <li
+              class="text-slate-400 font-semibold py-2 hover:text-green-500 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a class="transition duration-300 ease-in-out" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li
+              class="text-slate-400 font-semibold py-2 hover:text-green-500 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a class="transition duration-300 ease-in-out" href="./about.html"
+                >About Us</a
+              >
+            </li>
+            <li
+              class="text-slate-400 font-semibold py-2 hover:text-green-500 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a
+                class="transition duration-300 ease-in-out"
+                href="./services.html"
+                >Services</a
+              >
+            </li>
+            <li
+              class="text-slate-400 font-semibold py-2 hover:text-green-500 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a
+                class="transition duration-300 ease-in-out"
+                href="./contact.html"
+                >Contacts</a
+              >
+            </li>
+            <li
+              class="text-slate-400 font-semibold py-2 hover:text-green-500 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a
+                class="transition duration-300 ease-in-out"
+                href="./signUp.html"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-4 px-14 lg:px-0">
+          <h3 class="text-slate-300 font-bold text-xl pb-6">Newsletter</h3>
+          <div class="border-b-2 relative">
+            <form class="flex items-center space-x-2 py-3">
+              <i class="fa-solid fa-envelope text-amber-500"></i>
+              <input
+                class="text-slate-300 bg-transparent"
+                type="email"
+                placeholder="Enter your email id"
+                required
+              />
+              <button type="submit" class="absolute pl-44">
+                <i
+                  class="fa-solid fa-arrow-right text-zinc-400 hover:text-zinc-300"
+                ></i>
+              </button>
+            </form>
+          </div>
+          <ul class="flex justify-self-start space-x-10 py-8 sm:py-24">
+            <li>
+              <a href="https://www.pinterest.com/"
+                ><img
+                  class="w-10 rounded-xl shadow-md hover:scale-125 transition duration-300 ease-in-out"
+                  src="./media/pinterest-logo-CA98998DCB-seeklogo.com.png"
+                  alt="pinterestlogo.png"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/videos?campaign_id=1635645080&extra_1=s%7Cc%7C313664978099%7Ce%7Cfacebook%27%7C&placement=&creative=313664978099&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1635645080%26adgroupid%3D61402566414%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw77WVBhBuEiwAJ-YoJOd2MiOp3_OvvFm5YmjNo8-NfSiG6rDfALIbjU19ieuWgRCQdgUydxoCHt8QAvD_BwE"
+                ><img
+                  class="w-10 rounded-xl shadow-md hover:scale-125 transition duration-300 ease-in-out"
+                  src="./media/facebook-logo.webp"
+                  alt="facebook-logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://apps.microsoft.com/store/detail/instagram/9NBLGGH5L9XT"
+                ><img
+                  class="w-10 rounded-xl shadow-md hover:scale-125 transition duration-300 ease-in-out"
+                  src="./media/instagram.png"
+                  alt="instagram.png"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.linkedin.android&hl=en&gl=US"
+                ><img
+                  class="w-10 rounded-xl shadow-md hover:scale-125 transition duration-300 ease-in-out"
+                  src="./media/LinkedIn_logo_initials.png"
+                  alt="LinkedIn_logo_initials"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center text-slate-400 sm:py-5">
+        <hr class="max-w-lg md:max-w-4xl mx-auto" />
+        <p class="py-4">
+          Easy Connections in Our Service &copy; 2022 - All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="./menu.js"></script>
+  </body>
+</html>
+
+<!-- Animation -->
+<!-- <button class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ...">
+  Hover me
+</button> -->

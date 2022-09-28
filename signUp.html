@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="signUp">
+    <title>Sign in | Lghtspeed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/aea7d27167.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- --------------header------------- -->
+
+    <header
+      class="shadow-md shadow-gray-900 fixed w-full bg-gray-900 z-50 px-6"
+    >
+      <div class="max-w-6xl mx-auto flex justify-between py-6 items-center">
+        <h1
+          class="text-slate-200 font-bold tracking-widest text-2xl md:text-4xl items-center"
+        >
+          <a href="./index.html">
+            <i class="fa-solid fa-satellite text-amber-400"></i>
+            Light<span class="text-sky-400">SPEED</span></a
+          >
+        </h1>
+        <nav class="hidden md:block">
+          <ul class="flex font-semibold text-slate-300">
+            <li
+              class="px-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="px-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a href="./about.html">About Us</a>
+            </li>
+            <li
+              class="hidden px-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a href="./menu.html">Services</a>
+            </li>
+            <li
+              class="pl-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="openBtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 md:h-6 w-5 md:w-6 text-sky-500 hover:text-sky-400 block md:hidden mx-3"
+            id="onclick"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- ------mobile menu------- -->
+
+      <div
+        id="mobileMenu"
+        style="display: none"
+        class="bg-gray-900 fixed h-96 inset-0 p-6"
+      >
+        <div class="flex justify-between items-center">
+          <h1
+            class="text-slate-200 font-bold tracking-widest text-2xl md:text-4xl items-center"
+          >
+            <a href="./index.html">
+              <i class="fa-solid fa-satellite text-amber-400"></i>
+              Light<span class="text-sky-400">SPEED</span></a
+            >
+          </h1>
+          <button id="closeBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h- w-5 mr-3 text-sky-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <hr class="my-4 border-gray-300" />
+        <nav>
+          <ul class="font-semibold text-slate-400 text-xl">
+            <li>
+              <a
+                class="px-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out"
+                href="./index.html"
+                >Home</a
+              >
+              <hr class="mx-4 my-4" />
+            </li>
+            <li>
+              <a
+                class="px-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out"
+                href="./about.html"
+                >About Us</a
+              >
+              <hr class="mx-4 my-4" />
+            </li>
+            <li>
+              <a
+                class="px-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out"
+                href="./menu.html"
+                >Services</a
+              >
+              <hr class="mx-4 my-4" />
+            </li>
+            <li>
+              <a
+                class="pl-4 hover:text-sky-500 activ:text-sky-400 transition duration-300 ease-in-out"
+                href="./contact.html"
+                >Contact Us</a
+              >
+              <hr class="mx-4 my-4" />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section
+      class="max-w-6xl mx-4 xl:mx-auto pt-32 grid grid-cols-1 md:grid-cols-2 gap-6"
+    >
+      <div>
+        <h1 class="font-bold text-xl sm:text-2xl md:text-3xl">
+          Open an account
+        </h1>
+        <h2 class="text-md sm:text-lg md:text-xl text-slate-500 my-6">
+          Opening an account is easy. Let's get started.
+        </h2>
+        <p class="my-4">I plane to trade</p>
+        <form class="flex items-center space-x-3">
+          <input type="checkbox" name="check" id="checkb" class="h-4 w-4">
+          <label for="chedckb" class="text-md md:text-lg">Stock & Options</label>
+        </form>
+        <form class="flex items-center space-x-3 my-2">
+          <input type="checkbox" name="check" id="checkb" class="h-4 w-4">
+          <label for="chedckb" class="text-md md:text-lg">Future</label>
+        </form>
+        <hr class="w-full my-4" />
+        <form class="my-6">
+          <label for="top" class="font-semibold">Select your account type</label>
+          <select
+            name="type"
+            id="type"
+            class="border border-slate-300 w-full p-2 rounded-md my-3 shadow-md required"
+          >
+            <option value="Individual">Individual</option>
+            <option value="Joint">Joint</option>
+            <option value="Corporate">Corporate</option>
+            <option value="Trust">Trust</option>
+            <option value="Partnership">Partnership</option>
+          </select>
+        </form>
+        <form class="my-6">
+          <label for="top" class="font-semibold">Select your platform</label>
+          <select
+            name="type"
+            id="type"
+            class="border border-slate-300 w-full p-2 rounded-md my-3 shadow-md required"
+          >
+            <option value="Lightspeed Trader">Lightspeed Trader</option>
+            <option
+              value="Other (Lightspeed Web&Mobile, EZE EMS, Sterling, Livevol X, etc.)"
+            >
+              Other (Lightspeed Web&Mobile, EZE EMS, Sterling, Livevol X, etc.)
+            </option>
+          </select>
+        </form>
+        <hr class="w-full my-6" />
+        <p class="my-4">I reside in</p>
+        <form>
+          <label for="stoc" class="container"
+            >US
+            <input type="radio" checked="checked" name="radio" id="stoc" />
+            <span class="checkmark"></span>
+          </label>
+          <label for="fut" class="container"
+            >Outside of the US
+            <input type="radio" name="radio" id="fut" />
+            <span class="checkmark"></span>
+          </label>
+        </form>
+        <hr class="w-full my-6" />
+        <a href="https://portal.wedbushfutures.com/App/Register/"
+          class="block w-full bg-indigo-900 text-slate-200 rounded-md p-2 text-center text-lg hover:bg-indigo-800"
+        >
+          Continue
+      </a>
+      </div>
+      <div class="py-6 px-4 bg-gray-800">
+        <h3
+          class="text-lg sm:text-xl md:text-2xl text-slate-200 font-semibold my-4"
+        >
+          What you'll need to open an account:
+        </h3>
+        <h4
+          class="text-lg sm:text-xl md:text-2xl text-slate-200 font-semibold my-4"
+        >
+          Individuals
+        </h4>
+        <ul class="text-sm sm:text-md md:text-lg text-slate-400 my-4 pl-4">
+          <li class="my-2">Income and tax residency information</li>
+          <li class="my-2">Personal contact information</li>
+          <li class="my-2">
+            Information on trading experience and trading objectives
+          </li>
+          <li class="my-2">Bank account information</li>
+        </ul>
+        <h4
+          class="text-lg sm:text-xl md:text-2xl text-slate-200 font-semibold my-4"
+        >
+          Institutions
+        </h4>
+        <ul class="text-sm sm:text-md md:text-lg text-slate-400 my-4 pl-4">
+          <li class="my-2">Tax and contact information of the organization</li>
+          <li class="my-2">
+            Personal and contact information of the Authorized Persona(s) of the
+            account
+          </li>
+          <li class="my-2">
+            Documents providing existence of your organization
+          </li>
+          <li class="my-2">Bank account information</li>
+        </ul>
+      </div>
+    </section>
+    <hr class="max-w-6xl mx-4 xl:mx-auto my-20" />
+
+    <section
+      class="max-w-6xl mx-4 xl:mx-auto my-10 grid grid-cols-1 md:grid-cols-2 gap-6"
+    >
+      <!-- -----left------- -->
+      <div>
+        <p class="font-semibold text-md sm:text-lg md:text-xl my-6">Support</p>
+        <h4 class="text-xl sm:text-2xl md:text-3xl font-bold my-6">
+          Most Popular FAQs
+        </h4>
+        <p class="text-md sm:text-lg md:text-xl text-slate-500">
+          Some of our most frequently asked qiestions.
+        </p>
+        <p class="text-md sm:text-lg md:text-xl text-slate-500">
+          For more information, please, visit support.
+        </p>
+      </div>
+      <div>
+        <!-- --------right------ -->
+        <!-- --------1--------- -->
+        <div class="my-4">
+          <p class="text-md sm:text-lg md:text-xl font-semibold">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="openText"
+                class="h-5 w-5 inline mx-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+              <path
+              fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+              clip-rule="evenodd"
+            />
+              </svg>
+            </button>
+            Is there a fee to open and maintain an account with Lightspeed?
+          </p>
+          <div
+            class="bg-zinc-200 p-4 text-md sm:text-lg md:text-xl text-slate-700"
+            id="demonstration"
+            style="display: none"
+          >
+            <p class="my-4">
+              There is no fee to open an account with Lightspeed. Maintenance
+              fees include the following:
+            </p>
+            <ul>
+              <li class="my-2 mx-4">
+                Lightspeed Trader software fee is your total monthly commission
+                charges subtracted from &dollar;130. For example, if you incur
+                &dollar;100 in commissions for a given month, your total
+                software fee for that month will be &dollar;30 (&dollar;130 -
+                &dollar;100 commissions = &dollar;30).
+              </li>
+              <li class="my-2 mx-4">
+                Market data is &dollar;13 for stocks and an additional
+                &dollar;10 for options. Pricing for additional data can be found
+                here.
+              </li>
+              <li class="my-2 mx-4">
+                If your account balance is below &dollar;15,000 and you do not
+                incur at least &dollar;25 in monthly commissions then you will
+                be charged a &dollar;25 monthly minimum inactivity fee.
+              </li>
+              <li class="my-2 mx-4">
+                All maintenance fees will be charged during the first business
+                week of the month and will be based on commissions generated the
+                previous month.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ------2------- -->
+        <div class="my-4">
+          <p class="text-md sm:text-lg md:text-xl font-semibold">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="openText2"
+                class="h-5 w-5 inline mx-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+              <path
+              fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+              clip-rule="evenodd"
+            />
+              </svg>
+            </button>
+            How do I found via ACH (electronic funding)?
+          </p>
+          <div
+            class="bg-zinc-200 p-4 text-md sm:text-lg md:text-xl text-slate-700 hidden"
+            id="demonstration2"
+            style="display: none"
+          >
+            <p class="my-4">
+              ACH transfers initiated through your bank will be rejected.
+              Lightspeed requires ACH relationships as well as ACH transfers to
+              be initiated through the customer portal. If you do not know your
+              login information, please contact a representative for assistance.
+            </p>
+            <ul>
+              <li class="my-2 mx-4">
+                After logging in, go to “My Account” and click on the “Fund
+                Transfers” link. ACH links and transactions initiated through
+                other financial institutions will not be accepted
+              </li>
+              <li class="my-2 mx-4">
+                ACH transfers initiated through your bank will be rejected.
+              </li>
+              <li class="my-2 mx-4">
+                Once the ACH link is verified, ACH transfers take only 2
+                business days to be completed.
+              </li>
+              <li class="my-2 mx-4">
+                Lightspeed does not charge for ACH transfers.
+              </li>
+              <li class="my-2 mx-4">
+                ACH deposits are limited to $30,000 per 60 calendar days.
+              </li>
+              <li class="my-2 mx-4">ACH links are limited to 1 per client.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- -----3----- -->
+        <div class="my-4">
+          <p class="text-md sm:text-lg md:text-xl font-semibold">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="openText3"
+                class="h-5 w-5 inline mx-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+              <path
+              fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+              clip-rule="evenodd"
+            />
+              </svg>
+            </button>
+            What are your domestic wire instructions?
+          </p>
+          <div
+            class="bg-zinc-200 p-4 text-md sm:text-lg md:text-xl text-slate-700 hidden"
+            id="demonstration3"
+            style="display: none"
+          >
+            <p>
+              <span class="font-semibold text-slate-900">Bank Name:</span> U.S.
+              Bank
+            </p>
+            <p>
+              <span class="font-semibold text-slate-900">Bank Address:</span>80
+              S 8th Street, Minneapolis, MN 55402 or, Portland, OR
+            </p>
+            <p>
+              <span class="font-semibold text-slate-900"></span>ABA/Routing #:
+              123000848
+            </p>
+            <p>
+              <span class="font-semibold text-slate-900">Beneficiary:</span>
+              Wedbush Securities, Inc.
+            </p>
+            <p>
+              <span class="font-semibold text-slate-900"
+                >Beneficiary Address:</span
+              >1000 Wilshire Blvd, Los Angeles, CA 90017
+            </p>
+            <p>
+              <span class="font-semibold text-slate-900"
+                >Beneficiary Account:</span
+              >
+              153910900825
+            </p>
+            <p>
+              <span class="font-semibold text-slate-900"
+                >For Further Credit to (FFC):</span
+              >Your name and account number*
+            </p>
+
+            <p class="mt-10">
+              For
+              <span class="font-semibold text-slate-900"
+                >cash account types,</span
+              >
+              add a "1" to the end of your account number.
+            </p>
+            <p>
+              For<span class="font-semibold text-slate-900">
+                margin account types,</span
+              >
+              add a "2" to the end of your account number.
+            </p>
+          </div>
+        </div>
+
+        <!-- -----4---- -->
+        <div class="my-4">
+          <p class="text-md sm:text-lg md:text-xl font-semibold">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="openText4"
+                class="h-5 w-5 inline mx-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+              <path
+              fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+              clip-rule="evenodd"
+            />
+              </svg>
+            </button>
+            What are your international wire instructions?
+          </p>
+          <div
+            class="bg-zinc-200 p-4 text-md sm:text-lg md:text-xl text-slate-700 hidden"
+            id="demonstration4"
+            style="display: none"
+          >
+            <p>
+              <span class="font-semibold text-slate-900">Bank Name:</span> The
+              Bank of New York Mellon
+            </p>
+
+            <p>
+              <span class="font-semibold text-slate-900">Bank Address:</span>
+
+              225 Liberty Street, New York, NY 10286
+            </p>
+
+            <p>
+              <span class="font-semibold text-slate-900"
+                >Secondary Bank Address:</span
+              >
+
+              240 Greenwich St, New York, NY 10007
+            </p>
+
+            <p>
+              <span class="font-semibold text-slate-900">SWIFT Code:</span>
+              IRVTUS3N
+            </p>
+
+            <p>
+              <span class="font-semibold text-slate-900"
+                >Beneficiary Address:</span
+              >
+
+              1000 Wilshire Blvd, Los Angeles, CA 90017
+            </p>
+
+            <p>
+              <span class="font-semibold text-slate-900"
+                >Beneficiary Account:</span
+              >
+              8540900001
+            </p>
+
+            <p>
+              For<span class="font-semibold text-slate-900">
+                cash account types,</span
+              >
+              add a "1" to the end of your account number.
+            </p>
+
+            <p>
+              For<span class="font-semibold text-slate-900">
+                margin account types,</span
+              >
+              add a "2" to the end of your account number.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------footer--------------- -->
+    <footer class="bg-gray-900 mt-24">
+      <div
+        class="max-w-6xl mx-8 xl:mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center pt-20"
+      >
+        <div class="text-center">
+          <div class="p-2">
+            <i
+              class="fa-solid fa-satellite text-amber-400 fa-4x animate-pulse transition duration-700 ease-in-out"
+            ></i>
+          </div>
+          <h3 class="text-slate-300 tracking-widest font-bold text-3xl mt-6">
+            Light<span class="text-sky-400">SPEED</span>
+          </h3>
+          <p class="max-w-md mx-auto text-slate-400 font-semibold my-6">
+            LightSpeed is a satellite internet constellation providing satellite
+            internet acces.
+          </p>
+        </div>
+        <div class="py-4 px-14">
+          <h3 class="text-slate-300 font-bold text-xl pb-6">Office</h3>
+          <p class="text-slate-400 font-semibold">Kay Poh Road</p>
+          <p class="text-slate-400 font-semibold">Bugis, Santosa</p>
+          <p class="pb-4 text-slate-400 font-semibold">
+            Ang Mo Kio, PIN 560066, Singapore
+          </p>
+          <p
+            class="text-slate-400 font-semibold border-b-2 border-indigo-500 text-lg"
+          >
+            srajabov76@gmail.com
+          </p>
+          <h4 class="py-4 text-slate-400 font-semibold">Tel: +998--0123456</h4>
+        </div>
+        <div class="py-4 pl-14 md:pl-36 lg:px-16">
+          <h3 class="text-slate-300 font-bold text-xl pb-6">Links</h3>
+          <ul>
+            <li
+              class="text-slate-400 font-semibold py-2 hover:text-green-500 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a class="transition duration-300 ease-in-out" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li
+              class="text-slate-400 font-semibold py-2 hover:text-green-500 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a class="transition duration-300 ease-in-out" href="./about.html"
+                >About Us</a
+              >
+            </li>
+            <li
+              class="text-slate-400 font-semibold py-2 hover:text-green-500 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a
+                class="transition duration-300 ease-in-out"
+                href="./services.html"
+                >Services</a
+              >
+            </li>
+            <li
+              class="text-slate-400 font-semibold py-2 hover:text-green-500 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a
+                class="transition duration-300 ease-in-out"
+                href="./contact.html"
+                >Contacts</a
+              >
+            </li>
+            <li
+              class="text-slate-400 font-semibold py-2 hover:text-green-500 transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <a
+                class="transition duration-300 ease-in-out"
+                href="./features.html"
+              ></a
+              >Features
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-4 px-14 lg:px-0">
+          <h3 class="text-slate-300 font-bold text-xl pb-6">Newsletter</h3>
+          <div class="border-b-2 relative">
+            <form class="flex items-center space-x-2 py-3">
+              <i class="fa-solid fa-envelope text-amber-500"></i>
+              <input
+                class="text-slate-300 bg-transparent"
+                type="email"
+                placeholder="Enter your email id"
+                required
+              />
+              <button type="submit" class="absolute pl-44">
+                <i class="fa-solid fa-arrow-right text-zinc-400"></i>
+              </button>
+            </form>
+          </div>
+          <ul class="flex justify-self-start space-x-10 py-8 sm:py-24">
+            <li>
+              <a href="https://www.pinterest.com/"
+                ><img
+                  class="w-10 rounded-xl shadow-md hover:scale-125 transition duration-300 ease-in-out"
+                  src="./media/pinterest-logo-CA98998DCB-seeklogo.com.png"
+                  alt="pinterestlogo.png"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/videos?campaign_id=1635645080&extra_1=s%7Cc%7C313664978099%7Ce%7Cfacebook%27%7C&placement=&creative=313664978099&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1635645080%26adgroupid%3D61402566414%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw77WVBhBuEiwAJ-YoJOd2MiOp3_OvvFm5YmjNo8-NfSiG6rDfALIbjU19ieuWgRCQdgUydxoCHt8QAvD_BwE"
+                ><img
+                  class="w-10 rounded-xl shadow-md hover:scale-125 transition duration-300 ease-in-out"
+                  src="./media/facebook-logo.webp"
+                  alt="facebook-logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://apps.microsoft.com/store/detail/instagram/9NBLGGH5L9XT"
+                ><img
+                  class="w-10 rounded-xl shadow-md hover:scale-125 transition duration-300 ease-in-out"
+                  src="./media/instagram.png"
+                  alt="instagram.png"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.linkedin.android&hl=en&gl=US"
+                ><img
+                  class="w-10 rounded-xl shadow-md hover:scale-125 transition duration-300 ease-in-out"
+                  src="./media/LinkedIn_logo_initials.png"
+                  alt="LinkedIn_logo_initials"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center text-slate-400 sm:py-5">
+        <hr class="max-w-lg md:max-w-4xl mx-auto" />
+        <p class="py-4">
+          Easy Connections in Our Service &copy; 2022 - All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="./menu.js"></script>
+  </body>
+</html>
